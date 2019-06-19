@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>TrashMap</title>
+  <meta name="description" content="OpenStreetMap Bengaluru Tree Map">
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <!--<link rel='shortcut icon' href='http://www.gubbilabs.in/sites/default/files/nitobe_favicon_0_0.ico' type='image/x-icon'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.0.0/mapbox-gl-geocoder.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.0.0/mapbox-gl-geocoder.css' type='text/css' />-->
+  <link href="https://www.mapbox.com/base/latest/base.css" rel="stylesheet"> 
+  <link rel="icon" type="image/ico" href="binn.png" />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.3.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.3.0/mapbox-gl-geocoder.css' type='text/css' />
+
+</head>
+
+<style type="text/css">
+.mapname{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  z-index: 6;
+  margin: 20px;
+  width: 30%;
+}
+
+.mapname h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#sidebar{
+  background:rgba(40, 53, 61, 0.23);
+}
+
+.toggles {
+  width: 320px;
+}
+
+.info {
+  width: 320px;
+  color: white;
+}
+
+.fill-darkblue-opaque {
+  background-color: rgba(34, 59, 83, 0.4);
+}
+
+.button.stroke:hover {
+  background-color: #1B5E20 !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.button.stroke {
+  box-shadow: 0px 0px 0px 2px #1B5E20 inset !important;
+  color: white;
+}
+
+.micro{
+  font-weight: bold;
+}
+
+.mapboxgl-popup-close-button{
+  font-size: x-large;
+}
+	
+.mapboxgl-popup {
+  min-width: auto;
+}  
+
+.mapboxgl-popup-content{
+  background-color: #8BC34A;
+   box-shadow: 5px 5px 3px #1B5E20;
+   font-family: "Times New Roman";
+     border-radius: 15px;
+
+}
+
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+    border-bottom-color: #1B5E20;
+    }
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+    border-top-color: #1B5E20;
+    }
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+    border-right-color: #1B5E20;
+    }
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+    border-left-color: #1B5E20;
+    }
+
+
+
+
+
+.geocoder {
+position:absolute;
+z-index:1;
+width:30%;
+left:50%;
+margin-left:-15%;
+top:20px;
+}
+.mapboxgl-ctrl-geocoder { min-width:100%; }
+
+.mapboxgl-ctrl-geocoder--input {
+  font: inherit;
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  margin: 0;
+  height: 50px;
+  color: #404040; /* fallback */
+  color: rgba(0, 0, 0, 0.75);
+  padding: 6px 45px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+</style>
+<body>
+<div class='mapname'>
+<div class="dark">
+  <h3 class='fancy' style="color:#1B5E20;" >TrashMap</h3>
+</div>
+<div class='pad1y left'>
+	  <a href='index.html' class='icon home button' style='padding: 3px 3px;'>Home</a> <br/><br/>
+	 
+</div>
+</div>
+  <div class='col12 clearfix'>
+    <div id='map' class=''></div>    
+  </div>
+  <div id='geocoder' class='geocoder'></div>
+  <script src="build-streets2.js"></script>
+</body>
+</html>
