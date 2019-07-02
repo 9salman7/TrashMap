@@ -20,7 +20,10 @@
 <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.3.0/mapbox-gl-geocoder.css' type='text/css' />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
+<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
 
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.css' type='text/css' />
 
 </head>
 
@@ -94,7 +97,6 @@
 
 }
 
-
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
@@ -112,10 +114,6 @@
     border-left-color: #1B5E20;
     }
 
-
-
-
-
 .geocoder {
 position:absolute;
 z-index:1;
@@ -124,11 +122,14 @@ left:50%;
 margin-left:-25%;
 top:20px;
 }
-.mapboxgl-ctrl-geocoder { min-width:100%; }
+.mapboxgl-ctrl-geocoder { 
+ background-color: #9ccc65;
+  min-width:100%; }
 
 .mapboxgl-ctrl-geocoder--input {
   
   font: inherit;
+  font-weight: bold;
   width: 100%;
   border: 0;
   background-color: #1B5E20;
@@ -142,23 +143,108 @@ top:20px;
   overflow: hidden;
 }
 
+.mapboxgl-ctrl-directions {
+  width: 20%;
+  min-width: 170px;
+  max-width: 170px;
+}
 
+.mapboxgl-ctrl-geocoder--icon {
+  display: inline-block;
+  vertical-align: middle;
+  speak: none;
+  fill: #757575;
+  top: 15px;
+}
 
+.mapboxgl-ctrl-geocoder--icon-search {
+  position: absolute;
+  top: 10px;
+  left: 96%;
+  width: 23px;
+  height: 23px;
+}
+
+#icon {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: black;
+}
+.mystyle {
+  visibility: visible;
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
+  animation: fadein 0.5s, fadeout 0.5s 4.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
 
 </style>
 <body>
+  <div id="snackbar">Welcome to TrashMap!</div>
+
 <div class='mapname'>
 <div class="dark">
   <h3 class='fancy' style="color:#1B5E20;" >TrashMap</h3>
 </div>
 <div class='pad1y left'>
-	  <a href='index.html' class='icon home button' style='padding: 3px 3px;'>Home</a> <br/><br/>
-	 
+    <a href='index.html' class='icon home button' style='padding: 3px 3px;'>Home</a> <br/><br/>
+   
 </div>
 </div>
   <div class='col12 clearfix'>
     <div id='map' class=''></div>    
   </div>
+  
   <div id='geocoder' class='geocoder'></div>
   <script src="build-streets2.js"></script>
 </body>
