@@ -1,0 +1,708 @@
+{
+	"_id": {
+		"$oid": "5d15c364089aae561cec5df0"
+	},
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					10.1,
+					11.2
+				]
+			},
+			"type": "Feature",
+			"id": 101,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					80.58437881474526,
+					20.978180875781035
+				]
+			},
+			"type": "Feature",
+			"id": 103,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.60003340509655,
+					12.982300170931993
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.57503143773721,
+					13.00200661880163
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.60355317416958,
+					13.028426995569333
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.61161971944438,
+					13.002687257942583
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.58107433323369,
+					12.98253002414387
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.58917760619624,
+					12.986453854550206
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.60230218387449,
+					13.022312635757217
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.58872699492247,
+					12.986975720805361
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.55978361806984,
+					12.983208451737681
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.61321065829492,
+					12.97417349224088
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.59619426483283,
+					12.995255471596508
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.57142900289722,
+					12.990308593215076
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.55535959690872,
+					12.994221887540732
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.5954816162224,
+					12.962154868998098
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.58349546197582,
+					13.014364769252012
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.5535397196814,
+					13.00863957335389
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.61797894549937,
+					13.021979586943573
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.5657983599873,
+					13.014953467489178
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.54838224013332,
+					13.006867238782434
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.61026626791477,
+					12.935805174475519
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.64033033807715,
+					12.97911969990406
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.6285858311802,
+					12.995208209540252
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.63458280476135,
+					13.013448890638102
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.61879399974208,
+					12.946856372449474
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.65394992214351,
+					12.949495303879019
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.59980077278459,
+					13.067056282256416
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.57266859982445,
+					13.015177432849825
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.59367930086552,
+					13.096354978049817
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.65820316773306,
+					12.971084976360714
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.69065701341509,
+					13.209358903797849
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.59744068975266,
+					13.016429664612332
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.57103573125391,
+					13.028755038526995
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.61140844508122,
+					13.056442110962408
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.65746020282444,
+					12.99204193659537
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.58083095177386,
+					12.97344357320533
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.54611223468055,
+					12.96774308963856
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.57433110130188,
+					13.037147300919784
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.55646865673992,
+					13.02389964864426
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.61700260738849,
+					12.98857960986878
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.59364212898225,
+					12.97230984627663
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.593662259692,
+					12.972198059578048
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.59028059040963,
+					12.952259369851788
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.63664996304857,
+					12.961979513439076
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.5922330531643,
+					13.020338495427552
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.56416838259975,
+					13.00000692065936
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.62436318481758,
+					12.966157732688245
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.57157965943753,
+					12.942652014266244
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					77.55720422703388,
+					12.955747537815256
+				]
+			},
+			"type": "Feature",
+			"id": 104,
+			"properties": {
+				"city": "Bangalore"
+			}
+		}
+	]
+}
