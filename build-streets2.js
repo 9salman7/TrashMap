@@ -1,3 +1,11 @@
+// Get the snackbar DIV
+
+  // Add the "show" class to DIV
+
+  // After 3 seconds, remove the show class from DIV
+var x = document.getElementById("snackbar");
+x.className = "show";
+setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
 /*
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FsbWFuOTciLCJhIjoiY2p3ODMwZmVjMDJ4ajN6bWxyZXB6OHVlNyJ9.Un8GIVGSdU-muWmDs08VXw';
 if ("geolocation" in navigator) { 
@@ -23,6 +31,7 @@ if ("geolocation" in navigator) {
 
 //access token taken from mapbox
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FsbWFuOTciLCJhIjoiY2p3ODMwZmVjMDJ4ajN6bWxyZXB6OHVlNyJ9.Un8GIVGSdU-muWmDs08VXw';
+
 
 
 //initializing map
@@ -64,7 +73,7 @@ var geocoder = new MapboxGeocoder({ // Initialize the geocoder
 });
 document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 
-//UNCOMMENT LATER
+/*UNCOMMENT LATER
 map.on('click', function(e) {
   var popup = new mapboxgl.Popup({closeOnClick: true})
 .setLngLat(e.lngLat)
@@ -75,7 +84,7 @@ var longitude=e.lngLat.lng;
   console.log(longitude);
   document.getElementById("lt").value=latitude;
   document.getElementById("ln").value=longitude;
-});
+});*/
 
 //adding geojson source
 function init(){
@@ -95,13 +104,15 @@ function buttonControl(flg,flt) {
   currLon=position.coords.longitude;
   mapDirections.setOrigin([currLon,currLat])
   mapDirections.setDestination([flg,flt])
-  map.addControl(mapDirections, 'bottom-left');
+  map.addControl(mapDirections, 'bottom-right');
   
   }); 
 }
 
 //wait for style to load
 map.once('style.load', function(e) {
+ 
+
     init();
     map.loadImage('recycle-bin.png', function(error, image) {
       if (error) throw error;
@@ -119,6 +130,10 @@ map.once('style.load', function(e) {
   
   //render feature if they exist
   map.on('click', function(e) {
+    map.flyTo({
+      center: e.lngLat,
+      zoom:17
+    });
     var features = map.queryRenderedFeatures(e.point, {
     layers: ['points'] // replace this with the name of the layer
     });
@@ -130,11 +145,14 @@ map.once('style.load', function(e) {
     var featCoor=feature.geometry.coordinates;
     flt=featCoor[1];
     flg=featCoor[0];
+    map.flyTo({
+      center: featCoor,
+      zoom: 17
+    });
     var popup = new mapboxgl.Popup({ offset: [0, -15] })
      .setLngLat(feature.geometry.coordinates)
      //.setHTML('<h3>' + feature.properties.city + '</h3>')
-     .setHTML('<button type="button" onclick="buttonControl(flg,flt)">Navigate to this dustbin</button>')
-     //.setHTML('<form method="get"><input type="hidden" name="feat" id="ftr"/><input type="submit" onclick="buttonControl(this)"></input>')
+     .setHTML('<h2>'+feature.properties.city+'</h2><button type="button" onclick="buttonControl(flg,flt)">Navigate to this dustbin</button>')
      .setLngLat(feature.geometry.coordinates)
      .addTo(map);
   });
@@ -239,6 +257,7 @@ map.once('style.load', function(e) {
       .setLngLat(features[0].geometry.coordinates)
       .setHTML('<h3>Nearest Dustbin</h3><br><button type="button" onclick="buttonControl(flg,flt)">Navigate to this dustbin</button>')
       .addTo(map);
+
   });
 });  //end of map.on(style.load)
 
